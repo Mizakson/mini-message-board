@@ -4,17 +4,14 @@
         <title>
             <%= title %>
         </title>
-        <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
         <h1>Messages</h1>
         <% for (let i = 0; i < messages.length; i++) { %>
             <div class="card">
-                    <div>
-                        <p class="message"><%= messages[i].text %></p>
-                        <p class="user"><%= messages[i].user%></p>
-                    </div>
-                    <p class="added"><%= messages[i].added%></p>
+                    <span class="message"><%= messages[i].text %></span>
+                    <span class="user"><%= messages[i].user%></span>
+                    <span class="added"><%= messages[i].added%></span>
             </div>
         <% }%>
     </body>

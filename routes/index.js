@@ -14,7 +14,7 @@ const messages = [
         added: new Date(),
     },
     {
-        text: "I am good",
+        text: "I am good...",
         user: "Clark",
         added: new Date(),
     }
