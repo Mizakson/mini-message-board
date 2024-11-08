@@ -1,0 +1,21 @@
+
+<html>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+    </head>
+    <body>
+        <h1>Messages</h1>
+        <% for (let i = 0; i < messages.length; i++) { %>
+            <div class="card">
+                    <div>
+                        <p class="message"><%= messages[i].text %></p>
+                        <p class="user"><%= messages[i].user%></p>
+                    </div>
+
+                    <p class="added"><%= messages[i].added%></p>
+            </div>
+        <% }%>
+    </body>
+</html>

@@ -21,7 +21,7 @@ const messages = [
 ]
 
 indexRouter.get("/", (req, res) => {
-    res.send("message from index...")
+    res.render("index", { title: "Mini Messageboard", messages: messages })
 })
 
 module.exports = indexRouter
