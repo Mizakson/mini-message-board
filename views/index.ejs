@@ -4,6 +4,7 @@
         <title>
             <%= title %>
         </title>
+        <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
         <h1>Messages</h1>
@@ -13,7 +14,6 @@
                         <p class="message"><%= messages[i].text %></p>
                         <p class="user"><%= messages[i].user%></p>
                     </div>
-
                     <p class="added"><%= messages[i].added%></p>
             </div>
         <% }%>
