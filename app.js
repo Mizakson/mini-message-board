@@ -11,20 +11,15 @@ const router = Router()
 
 const messages = [
     {
-        text: "Hi...",
-        user: "Marie",
+        text: "Hi there!",
+        user: "Amando",
         added: new Date(),
     },
     {
-        text: "I am evil...",
-        user: "Hal",
+        text: "Hello world!",
+        user: "Charles",
         added: new Date(),
     },
-    {
-        text: "I am good...",
-        user: "Clark",
-        added: new Date(),
-    }
 ]
 
 app.get("/", (req, res) => {
