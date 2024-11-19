@@ -12,6 +12,9 @@
                     <span class="message"><%= messages[i].text %></span>
                     <span class="user"><%= messages[i].user%></span>
                     <span class="added"><%= messages[i].added%></span>
+                    
+                    <!-- add 1 to message index so url doesnt start at 0 -->
+                    <a href="./messages/<%= messages[i] + 1 %>">details</a>
             </div>
         <% }%>
         <div>
