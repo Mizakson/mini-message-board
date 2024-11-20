@@ -18,4 +18,10 @@ indexRouter.get("/", (req, res) => {
     res.render("index", {title: "Mini Messageboard", messages: messages})
 })
 
+indexRouter.get("/details/:index", (req, res) => {
+    const { index } = req.params
+    const message = messages[index - 1]
+    res.render("details", { index: index, message: message,})
+})
+
 module.exports = { indexRouter, messages }
