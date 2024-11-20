@@ -4,13 +4,14 @@
     </head>
     <body>
         <h1><% title %></h1>
-        <% messages.forEach(message => {
+        <% messages.forEach(function(message, index) { %> 
             <div class="card">
                 <span class="message-text"><%= message.text%></span>
                 <span class="message-user"><%= message.user%></span>
                 <span class="message-added"><%= message.added%></span>
             </div>
-        }); %>
+        <%})
+        %>
         <div>
             <!-- <a href="/new">New Message</a> -->
         </div>
