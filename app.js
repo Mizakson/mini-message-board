@@ -7,8 +7,11 @@ app.set("view engine", "ejs")
 app.use(express.urlencoded({ extended: true }))
 
 const { indexRouter, messages } = require("./routes/indexRouter")
+const { newMessageRouter } = require("./routes/newMessageRouter")
 
 app.use("/", indexRouter)
+app.get("/new", newMessageRouter)
+app.post("/new", newMessageRouter)
 
 const PORT = 3000
 app.listen(PORT, () => {
