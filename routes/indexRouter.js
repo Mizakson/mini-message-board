@@ -13,3 +13,7 @@ const messages = [
         added: new Date(),
     },
 ]
+
+indexRouter.get("/", (req, res) => {
+    res.render("index", {title: "Mini Messageboard", messages: messages})
+})
