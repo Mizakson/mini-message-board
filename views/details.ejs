@@ -1,14 +1,19 @@
 <html>
     <head>
         <title><%= index %></title>
+        <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
         <h1>Message <%= index %></h1>
-        <div>
+        <div class="card">
             <span><%= message.text %></span>
             <span><%= message.user %></span>
             <span><%= message.added %></span>
-            <a href="/"">back</a>
+            <div>
+                <button>
+                    <a href="/"">Back</a>
+                </button>
+            </div>
         </div>    
     </body>
     

@@ -1,5 +1,10 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
 a {
@@ -8,6 +13,42 @@ a {
     color: inherit;
 }
 
+h1 {
+    padding-bottom: 2.5%;
+}
+
 a:hover {
     color: blue;
+}
+
+button {
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    padding-bottom: 1.5%;
+}
+
+.message-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-field {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 1.5%;
+}
+
+.form-submit {
+    margin-top: 5%;
+}
+
+.form-submit > button:hover {
+    color: blue;
+    cursor: pointer;
 }

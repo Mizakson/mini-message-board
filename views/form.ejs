@@ -1,19 +1,20 @@
 <html>
     <head>
+        <link rel="stylesheet" href="/styles.css">
         <title>Post Message</title>
     </head>
     <body>
         <h1>Post a new message...</h1>
         <form method="POST" action="/new" >
-            <div>
+            <div class="form-field">
                 <label for="msg">Text: </label>
                 <input type="text" name="msg" id="msg">
             </div>
-            <div>
+            <div class="form-field">
                 <label for="user">Username: </label>
                 <input type="text" name="user" id="user">
             </div>
-            <div>
+            <div class="form-submit">
                 <button type="submit">Submit</button>
             </div>
         </form>

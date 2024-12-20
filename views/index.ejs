@@ -6,15 +6,23 @@
         <h1><%= title %></h1>
         <% messages.forEach(function(message, index) { %> 
             <div class="card">
-                <span class="message-text"><%= message.text%></span>
-                <span class="message-user"><%= message.user%></span>
-                <span class="message-added"><%= message.added%></span>
-                <a href="/details/<%= index + 1 %>">open</a>
+                <div class="message-header">
+                    <p class="message-text"><%= message.text%></p>
+                    <p class="message-user"><%= message.user%></p>
+                </div>
+                <p class="message-added"><%= message.added%></p>
+                <div>
+                    <button>
+                        <a href="/details/<%= index + 1 %>">Open</a>
+                    </button>
+                </div>
             </div>
         <%})
         %>
-        <div>
-            <a href="/new">New Message</a>
+        <div class="new-message">
+            <button>
+                <a href="/new">New Message</a>
+            </button>
         </div>
     </body>
 </html>
